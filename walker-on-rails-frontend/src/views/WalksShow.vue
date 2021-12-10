@@ -6,7 +6,7 @@
       {{ walk.user_id }}
     </p>
     <p>
-      <b>User Name:</b>
+      <b>Name:</b>
       {{ walk.user.name }}
     </p>
     <p>
