@@ -10,6 +10,14 @@
       {{ walk.user.name }}
     </p>
     <p>
+      <b>Height:</b>
+      {{ walk.user.height}}
+    </p>
+    <p>
+      <b>Weight:</b>
+      {{ walk.user.weight}}
+    </p>
+    <p>
       <b>Optimal Steps:</b>
       {{ walk.optimal_steps }}
     </p>
