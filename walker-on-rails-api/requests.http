@@ -1,0 +1,15 @@
+GET http://localhost:3000/walks
+
+###
+GET http://localhost:3000/walks/7
+
+###
+POST http://localhost:3000/walks
+Content-Type: application/json
+
+{
+  "optimal_steps": 4900 ,
+  "miles": 2.45 ,
+  "status":true,
+  "date": "11/09/2021"
+}
