@@ -6,6 +6,9 @@
       <router-link to="/about">About</router-link>
       |
       <router-link to="/walks">Walks</router-link>
+      |
+      <router-link to="/signup">Signup</router-link>
+      in your HTML!
     </div>
     <router-view />
   </div>
