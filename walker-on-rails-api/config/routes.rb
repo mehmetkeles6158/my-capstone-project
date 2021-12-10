@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get "/walks/:id" => "walks#show"
   post "/walks" => "walks#create"
 
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+
 end

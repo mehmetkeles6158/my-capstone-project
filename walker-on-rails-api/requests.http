@@ -22,8 +22,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Mo Salah",
+  "email": "mosalah@gmail.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -33,6 +33,6 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "walker@gmail.com",
+  "email": "mosalah@gmail.com",
   "password": "password"
 }
