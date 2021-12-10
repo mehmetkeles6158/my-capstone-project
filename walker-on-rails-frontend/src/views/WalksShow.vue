@@ -20,7 +20,7 @@
     <p>
       <p>
       <b>Steps:</b>
-      {{ walk.user.steps }}
+      {{ walk.steps }}
     </p>
       <b>Optimal Steps:</b>
       {{ walk.optimal_steps }}
