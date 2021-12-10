@@ -18,10 +18,6 @@
       {{ walk.user.weight}}
     </p>
     <p>
-      <p>
-      <b>Steps:</b>
-      {{ walk.steps }}
-    </p>
       <b>Optimal Steps:</b>
       {{ walk.optimal_steps }}
     </p>
