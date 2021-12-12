@@ -6,7 +6,16 @@
       {{ walk.user_id }}
     </p>
     <p>
-      <!-- <p><router-link v-bind:to="`/walks/${walk.id}/edit`">Edit walk</router-link></p> -->
+      <b>Optimal Steps:</b>
+      {{ walk.optimal_steps }}
+    </p>
+    <p>
+      <b>Miles:</b>
+      {{ walk.miles }}
+    </p>
+    <p>
+      <b>Miles:</b>
+      {{ walk.status }}
     </p>
   </div>
 </template>
