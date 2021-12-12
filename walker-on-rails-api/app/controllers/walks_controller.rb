@@ -14,6 +14,7 @@ class WalksController < ApplicationController
 
   def create
     walk = Walk.new(
+      user_id: current_user.id,
       optimal_steps: params[:optimal_steps],
       miles: params[:miles],
       status: params[:status],
@@ -23,11 +24,10 @@ class WalksController < ApplicationController
     if walk.save
       render json: walk
     else
-      render json: {errors: product.errors.full_messages}, status: :unprocessable_entity
+      render json: {errors: walk.errors.full_messages}, status: :unprocessable_entity
     end
 
   end
 
-  p " hello, just see changes"
 
 end

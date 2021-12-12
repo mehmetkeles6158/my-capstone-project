@@ -5,10 +5,10 @@
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <div>
+      <!-- <div>
         <label>User Id:</label>
         <input type="text" v-model="newWalkParams.user_id" />
-      </div>
+      </div> -->
       <div>
         <label>Optimal Steps:</label>
         <input type="text" v-model="newWalkParams.optimal_steps" />

@@ -1,6 +1,6 @@
 
 
-@jwt = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk0MjgzNDB9.l3Gn0EDMnpspv6ipo2zxlEGDK0tKcpLzTUjwAWaxlvo
 GET http://localhost:3000/walks
 
 ###
@@ -8,8 +8,9 @@ GET http://localhost:3000/walks/7
 
 ###
 POST http://localhost:3000/walks
-Content-Type: application/json
 Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
 {
   "optimal_steps": 4900 ,
   "miles": 2.45 ,
