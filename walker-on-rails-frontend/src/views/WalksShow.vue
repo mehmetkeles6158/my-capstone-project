@@ -6,35 +6,8 @@
       {{ walk.user_id }}
     </p>
     <p>
-      <b>Name:</b>
-      {{ walk.user.name }}
+      <!-- <p><router-link v-bind:to="`/walks/${walk.id}/edit`">Edit walk</router-link></p> -->
     </p>
-    <p>
-      <b>Height:</b>
-      {{ walk.user.height}}
-    </p>
-    <p>
-      <b>Weight:</b>
-      {{ walk.user.weight}}
-    </p>
-    <p>
-      <b>Optimal Steps:</b>
-      {{ walk.optimal_steps }}
-    </p>
-    <p>
-      <b>Miles:</b>
-      {{ walk.miles }}
-    </p>
-    <p>
-      <p>
-      <b>Satus:</b>
-      {{ walk.status }}
-    </p>
-      <b>Date:</b>
-      {{ walk.date }}
-    </p>
-    
-    <!-- <p><router-link v-bind:to="`/walks/${walk.id}/edit`">Edit walk</router-link></p> -->
   </div>
 </template>
 
