@@ -7,6 +7,8 @@
       |
       <router-link to="/walks">Walks</router-link>
       |
+      <router-link to="/walks/new">Add Walk</router-link>
+      |
       <router-link to="/signup">Signup</router-link>
       |
       <router-link to="/login">Login</router-link>

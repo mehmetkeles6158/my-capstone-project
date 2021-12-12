@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import WalksIndex from '../views/WalksIndex.vue'
+import WalksNew from '../views/WalksNew.vue'
 import WalksShow from '../views/WalksShow.vue'
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
@@ -19,6 +20,11 @@ const routes = [
     path: '/walks',
     name: 'walks-index',
     component: WalksIndex
+  },
+  {
+    path: "/walks/new",
+    name: "walks-new",
+    component: WalksNew,
   },
   {
     path: '/walks/:id',
