@@ -23,7 +23,7 @@
       </div>
       <div>
         <label>Date:</label>
-        <input type="text" v-model="newWalkParams.date" />
+        <input type="date" v-model="newWalkParams.date" />
       </div>
       <input type="submit" value="Submit" />
     </form>
