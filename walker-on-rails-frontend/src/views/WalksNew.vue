@@ -10,16 +10,8 @@
         <input type="text" v-model="newWalkParams.user_id" />
       </div> -->
       <div>
-        <label>Optimal Steps:</label>
-        <input type="text" v-model="newWalkParams.optimal_steps" />
-      </div>
-      <div>
-        <label>Miles:</label>
-        <input type="text" v-model="newWalkParams.miles" />
-      </div>
-      <div>
-        <label>Status:</label>
-        <input type="text" v-model="newWalkParams.status" />
+        <label>Steps:</label>
+        <input type="text" v-model="newWalkParams.steps" />
       </div>
       <div>
         <label>Date:</label>

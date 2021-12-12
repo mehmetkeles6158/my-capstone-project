@@ -1,4 +1,5 @@
 class WalkSerializer < ActiveModel::Serializer
-  attributes :id, :optimal_steps, :miles, :status, :date, :user_id
+  attributes :id, :steps, :date, :user_id, :miles
   belongs_to :user
 end
+

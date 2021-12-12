@@ -15,9 +15,7 @@ class WalksController < ApplicationController
   def create
     walk = Walk.new(
       user_id: current_user.id,
-      optimal_steps: params[:optimal_steps],
-      miles: params[:miles],
-      status: params[:status],
+      steps: params[:steps],
       date: params[:date]
     )
 

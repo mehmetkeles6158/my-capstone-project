@@ -12,7 +12,7 @@
       </p>
       <p>
         <b>Steps:</b>
-        {{ walk.optimal_steps }}
+        {{ walk.steps }}
       </p>
       <router-link v-bind:to="`walks/${walk.id}`">More Info</router-link>
       <hr />

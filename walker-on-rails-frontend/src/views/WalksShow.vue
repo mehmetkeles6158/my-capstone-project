@@ -6,16 +6,12 @@
       {{ walk.user_id }}
     </p>
     <p>
-      <b>Optimal Steps:</b>
-      {{ walk.optimal_steps }}
+      <b>Steps:</b>
+      {{ walk.steps }}
     </p>
     <p>
       <b>Miles:</b>
       {{ walk.miles }}
-    </p>
-    <p>
-      <b>Miles:</b>
-      {{ walk.status }}
     </p>
   </div>
 </template>
