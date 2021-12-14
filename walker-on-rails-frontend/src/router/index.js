@@ -28,7 +28,7 @@ const routes = [
   },
   {
     path: '/walks/:id',
-    name: 'walks-show',
+    name: 'WalksShow',
     component: WalksShow
   },
   { path: "/signup", 

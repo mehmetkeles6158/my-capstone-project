@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="show">
     <h1>{{ message }}</h1>
     <p>
       <b>User Id:</b>

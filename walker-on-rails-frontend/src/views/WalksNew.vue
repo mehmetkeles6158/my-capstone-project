@@ -1,5 +1,5 @@
 <template>
-  <div class="signup">
+  <div class="create">
     <form v-on:submit.prevent="submit()">
       <h1>Add Walk</h1>
       <ul>
@@ -21,7 +21,7 @@
     </form>
   </div>
 </template>
-
+<style></style>
 <script>
 import axios from "axios";
 export default {
