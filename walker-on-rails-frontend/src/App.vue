@@ -20,7 +20,7 @@
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="/walks">Walks</a></li>
               <li class="nav-item"><a class="nav-link" href="/walks/new">Add Walk</a></li>
               <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="/signup">Logout</a></li>
+              <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
               <li class="nav-item"><a class="nav-link" href="/signup">Signup</a></li>
             </ul>
           </div>

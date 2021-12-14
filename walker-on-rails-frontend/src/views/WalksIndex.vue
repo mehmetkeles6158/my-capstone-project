@@ -15,15 +15,15 @@
             alt="..."
           />
         </div> -->
-        <!-- <div class="col-lg-5">
+      <!-- <div class="col-lg-5">
           <h1 class="font-weight-light">Your Walk Distances</h1>
         </div> -->
-      </div>
+      <!-- </div> -->
       <!-- Call to Action-->
 
       <!-- Content Row-->
-      <div class="row gx-4 gx-lg-5" v-for="walk in walks">
-        <div class="col-md-4 mb-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5" v-for="walk in walks">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title">Walk Info</h2>
