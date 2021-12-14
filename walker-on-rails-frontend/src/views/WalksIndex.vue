@@ -7,14 +7,14 @@
     </div>
     <div class="container px-4 px-lg-5">
       <!-- Heading Row-->
-      <div class="row gx-4 gx-lg-5 align-items-center my-5">
+      <!-- <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <div class="col-lg-7">
           <img
             class="img-fluid rounded mb-4 mb-lg-0"
             src="https://images.unsplash.com/photo-1449459831403-2ea2681d4270?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&w=1000&q=80"
             alt="..."
           />
-        </div>
+        </div> -->
         <!-- <div class="col-lg-5">
           <h1 class="font-weight-light">Your Walk Distances</h1>
         </div> -->

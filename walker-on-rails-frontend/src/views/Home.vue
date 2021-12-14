@@ -1,6 +1,22 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <h2 class="text-white m-0">The Walker On The Rails</h2>
+      </div>
+    </div>
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+      <div class="col-lg-7">
+        <img
+          class="img-fluid rounded mb-4 mb-lg-0"
+          src="https://images.unsplash.com/photo-1449459831403-2ea2681d4270?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&w=1000&q=80"
+          alt="..."
+        />
+      </div>
+      <!-- <div class="col-lg-5">
+          <h1 class="font-weight-light">Your Walk Distances</h1>
+        </div> -->
+    </div>
   </div>
 </template>
 
