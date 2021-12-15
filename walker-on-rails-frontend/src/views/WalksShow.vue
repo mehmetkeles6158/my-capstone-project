@@ -6,7 +6,11 @@
       {{ walk.user_id }}
     </p>
     <p>
-      <b>Steps:</b>
+      <b>Optimal Steps:</b>
+      {{ walk.user.optimal_steps }}
+    </p>
+    <p>
+      <b>Your Steps:</b>
       {{ walk.steps }}
     </p>
     <p>
@@ -23,7 +27,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Welcome to The Show",
+      message: "Your Walk Details",
       walk: {},
     };
   },

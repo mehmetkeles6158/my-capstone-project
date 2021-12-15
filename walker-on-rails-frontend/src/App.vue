@@ -1,6 +1,6 @@
 <template>
-  <div id="nav">
-    <div id="app">
+  <div id="app">
+    <div id="nav">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Home</a>
@@ -32,7 +32,7 @@
     <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container px-4 px-lg-5">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+        <p class="m-0 text-center text-white">Copyright &copy;</p>
       </div>
     </footer>
   </div>
