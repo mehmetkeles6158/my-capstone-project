@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <!-- <div id="nav"> -->
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Walker</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,7 +25,6 @@
         </div>
       </div>
     </nav>
-    <!-- </div> -->
     <!-- Page Content-->
     <router-view />
     <!-- Footer-->
