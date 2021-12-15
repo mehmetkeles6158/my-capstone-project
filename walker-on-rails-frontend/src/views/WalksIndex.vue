@@ -6,27 +6,11 @@
       </div>
     </div>
     <div class="container px-4 px-lg-5">
-      <!-- Heading Row-->
-      <!-- <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-7">
-          <img
-            class="img-fluid rounded mb-4 mb-lg-0"
-            src="https://images.unsplash.com/photo-1449459831403-2ea2681d4270?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&w=1000&q=80"
-            alt="..."
-          />
-        </div> -->
-      <!-- <div class="col-lg-5">
-          <h1 class="font-weight-light">Your Walk Distances</h1>
-        </div> -->
-      <!-- </div> -->
-      <!-- Call to Action-->
-
-      <!-- Content Row-->
       <div class="row gx-4 gx-lg-5">
         <div class="col-md-4 mb-5" v-for="walk in walks">
           <div class="card h-100">
             <div class="card-body">
-              <h2 class="card-title">Walk Info</h2>
+              <h4 class="card-title">Walk-Info:</h4>
               <p class="card-text">
                 <b>User id:</b>
                 {{ walk.user_id }}
