@@ -17,10 +17,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/walks">Walks</a>
+              <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/walks/new">Add Walk</a>
+              <a class="nav-link" href="/walks/new">New Walk</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
