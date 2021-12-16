@@ -17,10 +17,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
+              <a class="nav-link" href="/walks/new">New Walk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/walks/new">New Walk</a>
+              <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
@@ -37,9 +37,10 @@
                 Account
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/login">Login</a></li>
-                <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                <li><a class="dropdown-item" href="/signup">Signup</a></li>
+                <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/login">Log in</a></li>
+                <li v-if="isLoggedIn()"><a class="dropdown-item" href="/logout">Log out</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li v-if="!isLoggedIn()"><a class="dropdown-item" href="/signup">Sign up</a></li>
               </ul>
             </li>
           </ul>
@@ -59,3 +60,17 @@
 </template>
 
 <style></style>
+
+<script>
+export default {
+  methods: {
+    isLoggedIn: function () {
+      if (localStorage.getItem("jwt")) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+};
+</script>
