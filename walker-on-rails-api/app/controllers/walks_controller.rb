@@ -3,7 +3,7 @@ class WalksController < ApplicationController
   # park_response = response.parse(:json)
   before_action :authenticate_user
   def index
-    walks = Walk.all
+    walks = Walk.where(user_id: current_user.id)
     render json: walks
   end
 
