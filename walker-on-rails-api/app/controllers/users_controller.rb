@@ -12,4 +12,19 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def update
+    user = User.find_by(id: params[:id])
+    user.weight = params[:weight] || user.weight
+    user.height = params[:height] || user.height
+
+    if user.save
+      render json: user
+    else
+      render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
+    end
+    
+  end
+
+ 
 end
