@@ -9,4 +9,5 @@ class Walk < ApplicationRecord
     steps.to_f * 0.04
   end
   
+  
 end

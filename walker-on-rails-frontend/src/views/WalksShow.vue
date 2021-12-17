@@ -6,6 +6,10 @@
       {{ walk.user_id }}
     </p>
     <p>
+      <b>Name:</b>
+      {{ walk.user.name }}
+    </p>
+    <p>
       <b>Optimal Steps:</b>
       {{ walk.user.optimal_steps }}
     </p>

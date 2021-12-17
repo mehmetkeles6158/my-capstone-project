@@ -1,8 +1,16 @@
 <template>
   <div class="home">
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
+    <div class="card text-white bg-secondary my-3 py-2 text-center">
       <div class="card-body">
         <h2 class="text-white m-0">Walk Distances</h2>
+        <br />
+        <p>
+          <b>Total Steps:</b>
+          {{ users.total_steps }}
+          <br />
+          <b>Total in Miles:</b>
+          {{ users.total_miles }}
+        </p>
       </div>
     </div>
     <div class="container px-4 px-lg-5">
@@ -41,10 +49,12 @@ export default {
     return {
       message: "Daily Walks",
       walks: [],
+      users: [],
     };
   },
   created: function () {
     this.walksIndex();
+    this.usersIndex();
   },
   methods: {
     walksIndex: function () {
@@ -52,6 +62,13 @@ export default {
       axios.get("/walks").then((response) => {
         console.log(response.data);
         this.walks = response.data;
+      });
+    },
+    usersIndex: function () {
+      console.log("Loading Users");
+      axios.get("/users").then((response) => {
+        console.log(response.data);
+        this.users = response.data;
       });
     },
   },

@@ -25,6 +25,8 @@ class User < ApplicationRecord
     return total_steps
   end
 
-
+  def total_miles
+    total_steps.to_f/2000
+  end
 
 end

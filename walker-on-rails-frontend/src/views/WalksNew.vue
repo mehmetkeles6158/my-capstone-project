@@ -1,23 +1,25 @@
 <template>
   <div class="create">
     <form v-on:submit.prevent="submit()">
-      <h1>Add Walk</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <!-- <div>
-        <label>User Id:</label>
-        <input type="text" v-model="newWalkParams.user_id" />
-      </div> -->
-      <div>
-        <label>Steps:</label>
-        <input type="text" v-model="newWalkParams.steps" />
+      <div class="card text-center">
+        <div class="card-header">The Walker on The Rails</div>
+        <div class="card-body">
+          <h5 class="card-title">Add Your Walk</h5>
+          <div>
+            <label>Steps:</label>
+            <input type="text" v-model="newWalkParams.steps" />
+          </div>
+          <div>
+            <label>Date:</label>
+            <input type="date" v-model="newWalkParams.date" />
+          </div>
+          <input type="submit" value="Submit" />
+        </div>
+        <div class="card-footer text-muted">"Keep Moving :)"</div>
       </div>
-      <div>
-        <label>Date:</label>
-        <input type="date" v-model="newWalkParams.date" />
-      </div>
-      <input type="submit" value="Submit" />
     </form>
   </div>
 </template>
