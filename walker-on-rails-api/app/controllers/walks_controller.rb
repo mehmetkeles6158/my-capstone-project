@@ -13,6 +13,13 @@ class WalksController < ApplicationController
   end
 
   def create
+    user_walks = current_user.walks
+    
+    total_steps = 0
+    user_walks.each do|user_walk|
+      total_steps += user_walk["steps"]
+    end
+
     walk = Walk.new(
       user_id: current_user.id,
       steps: params[:steps],
