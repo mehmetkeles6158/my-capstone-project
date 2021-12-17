@@ -23,7 +23,7 @@
               <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/users">Info</a>
             </li>
             <li class="nav-item dropdown">
               <a
