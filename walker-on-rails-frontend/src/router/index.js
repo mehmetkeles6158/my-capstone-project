@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 import WalksIndex from '../views/WalksIndex.vue'
 import WalksNew from '../views/WalksNew.vue'
 import WalksShow from '../views/WalksShow.vue'
-import UsersEdit from '../views/UsersEdit.vue'
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
@@ -31,11 +30,6 @@ const routes = [
     path: '/walks/:id',
     name: 'walks-show',
     component: WalksShow
-  },
-  {
-    path: '/walks/:id',
-    name: 'Walks-edit',
-    component: UsersEdit
   },
   { path: "/signup", 
     name: "signup", 

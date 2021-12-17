@@ -1,6 +1,6 @@
 
 
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk3OTE0MDl9.Dov-p4U7UcAz7TFcaVyhHg9RHX1QPfw_g-HfqjZU-fI
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk3OTcxMzN9.Q7Zr0jB0BibOWNqX1MbRx5g7R5dSxYfPpshm1oUNkL0
 GET http://localhost:3000/walks
 Authorization: Bearer {{jwt}}
 ###
@@ -41,3 +41,4 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/users
+Authorization: Bearer {{jwt}}

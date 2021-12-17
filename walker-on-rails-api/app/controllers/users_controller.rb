@@ -28,8 +28,8 @@ class UsersController < ApplicationController
   end
 
   def index
-    user = User.where(id: current_user)
-    render json: user
+    # user = User.where(id: current_user.id)
+    render json: current_user
   end
 
  

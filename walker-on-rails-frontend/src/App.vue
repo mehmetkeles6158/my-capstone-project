@@ -23,7 +23,7 @@
               <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users">Info</a>
+              <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -53,7 +53,7 @@
     <!-- Footer-->
     <footer class="py-3 bg-dark">
       <div class="container px-4 px-lg-5">
-        <p class="m-0 text-center text-white">Copyright &copy;</p>
+        <p class="m-0 text-center text-white">&copy;</p>
       </div>
     </footer>
   </div>
