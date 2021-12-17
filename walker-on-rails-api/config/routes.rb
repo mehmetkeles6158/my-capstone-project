@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   post "/walks" => "walks#create"
 
   post "/users" => "users#create"
+  get "/users" => "users#index"
   post "/sessions" => "sessions#create"
   patch "/users/:id" => "users#update"
+  
 
 end

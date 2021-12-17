@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :current_user
   def create
     user = User.new(
       name: params[:name],
@@ -24,6 +25,11 @@ class UsersController < ApplicationController
       render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
     end
     
+  end
+
+  def index
+    user = User.where(id: current_user.id)
+    render json: user
   end
 
  

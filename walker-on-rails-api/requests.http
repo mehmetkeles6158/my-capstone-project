@@ -1,6 +1,6 @@
 
 
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk3MDI1Mzh9.Bp2puqwjHOscDY3bMBlefMAOPH6vGVpb7oqUNsw2Upk
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk3OTE0MDl9.Dov-p4U7UcAz7TFcaVyhHg9RHX1QPfw_g-HfqjZU-fI
 GET http://localhost:3000/walks
 Authorization: Bearer {{jwt}}
 ###
@@ -37,3 +37,7 @@ Content-Type: application/json
   "email": "mosalah@gmail.com",
   "password": "password"
 }
+
+###
+
+GET http://localhost:3000/users

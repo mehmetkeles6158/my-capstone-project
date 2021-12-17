@@ -16,4 +16,15 @@ class User < ApplicationRecord
     end
   end
 
+  def total_steps
+    user_walks = walks
+    total_steps = 0
+    user_walks.each do |walk|
+      total_steps +=  walk["steps"]
+    end
+    return total_steps
+  end
+
+
+
 end

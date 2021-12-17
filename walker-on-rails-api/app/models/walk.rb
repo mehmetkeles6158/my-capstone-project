@@ -6,9 +6,9 @@ class Walk < ApplicationRecord
   end
 
   # def total
-
+  #   user_walks = current_user.walks
   #   total_steps = 0
-  #   walks.each do |walk|
+  #   user_walks.each do |walk|
   #     total_steps +=  walk["steps"]
   #   end
   #   return total_steps
