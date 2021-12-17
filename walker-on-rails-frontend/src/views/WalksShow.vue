@@ -14,8 +14,12 @@
       {{ walk.steps }}
     </p>
     <p>
-      <b>Miles:</b>
+      <b>Distance in miles:</b>
       {{ walk.miles }}
+    </p>
+    <p>
+      <b>Calories-Burned:</b>
+      {{ walk.cal }}
     </p>
   </div>
 </template>

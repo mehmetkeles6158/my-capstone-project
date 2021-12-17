@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :current_user
+  # before_action :current_user
   def create
     user = User.new(
       name: params[:name],
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    user = User.where(id: current_user.id)
+    user = User.where(id: current_user)
     render json: user
   end
 

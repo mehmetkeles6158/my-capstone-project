@@ -41,7 +41,6 @@ export default {
     return {
       message: "Daily Walks",
       walks: [],
-      user: {},
     };
   },
   created: function () {
@@ -53,12 +52,6 @@ export default {
       axios.get("/walks").then((response) => {
         console.log(response.data);
         this.walks = response.data;
-      });
-    },
-    getUser: function () {
-      axios.get("/user").then((response) => {
-        console.log(response.data);
-        this.user = response.data;
       });
     },
   },
