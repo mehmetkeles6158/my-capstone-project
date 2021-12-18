@@ -7,6 +7,7 @@ import WalksShow from '../views/WalksShow.vue'
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import UserEdit from "../views/UserEdit.vue";
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,9 @@ const routes = [
   { path: "/logout", 
     name: "logout", 
     component: Logout },
+  { path: "/users", 
+    name: "useredit", 
+    component: UserEdit },
 
 
   {

@@ -15,7 +15,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find_by(id: params[:id])
+    user = User.where(id: current_user.id)
+    user.age = params[:age] || user.age
     user.weight = params[:weight] || user.weight
     user.height = params[:height] || user.height
 
@@ -28,7 +29,6 @@ class UsersController < ApplicationController
   end
 
   def index
-    # user = User.where(id: current_user.id)
     render json: current_user
   end
 

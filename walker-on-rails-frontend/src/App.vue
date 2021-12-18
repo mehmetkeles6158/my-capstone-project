@@ -23,7 +23,7 @@
               <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">Optimal</a>
+              <a class="nav-link" href="/users">Optimal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
