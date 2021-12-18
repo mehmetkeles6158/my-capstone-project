@@ -2,7 +2,7 @@
   <div id="app">
     <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">HOME</a>
+        <a class="navbar-brand" href="/">THE WALKER</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -14,13 +14,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/walks/new">New Walk</a>
+              <a class="nav-link" href="/walks/new">Add Walk</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">Optimal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
@@ -51,7 +54,7 @@
     <!-- Page Content-->
     <router-view />
     <!-- Footer-->
-    <footer class="py-1 bg-dark">
+    <footer class="py-3 bg-dark">
       <div class="container px-4 px-lg-5">
         <p class="m-0 text-center text-white">&copy;</p>
       </div>
