@@ -18,7 +18,13 @@
           </div>
           <input type="submit" value="Submit" />
         </div>
-        <div class="card-footer text-muted">"Keep Moving Forward :)"</div>
+        <div class="card-footer text-muted">
+          <p>"Keep Moving Forward :)"</p>
+          <img
+            src="https://media.istockphoto.com/photos/man-walk-away-on-railroad-with-warm-light-picture-id1163526318?b=1&k=20&m=1163526318&s=170667a&w=0&h=YbgFdxrQA9bAewLSOQqSuyxncaF5M-aWGeCOgHr_YFY="
+            alt=""
+          />
+        </div>
       </div>
     </form>
   </div>

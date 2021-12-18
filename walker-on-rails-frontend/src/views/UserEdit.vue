@@ -1,20 +1,32 @@
 <template>
   <div class="Edit User">
     <form v-on:submit.prevent="submit()">
-      <h1>Edit Your Info</h1>
-      <div>
-        <label>Age:</label>
-        <input type="text" v-model="editUserParams.age" />
+      <div class="card text-center">
+        <div class="card-header">The Walker on The Rails</div>
+        <div class="card-body">
+          <h5 class="card-title">Edit Your Info</h5>
+          <div>
+            <label>Age:</label>
+            <input type="text" v-model="editUserParams.age" />
+          </div>
+          <div>
+            <label>Height:</label>
+            <input type="text" v-model="editUserParams.height" />
+          </div>
+          <div>
+            <label>Weight:</label>
+            <input type="text" v-model="editUserParams.weight" />
+          </div>
+          <input type="submit" value="Submit" />
+        </div>
+        <div class="card-footer text-muted">
+          <p>"Keep Moving Forward :)"</p>
+          <img
+            src="https://media.istockphoto.com/photos/closeup-on-shoe-of-athlete-runner-man-feet-running-picture-id494437762?b=1&k=20&m=494437762&s=170667a&w=0&h=6ENwkyaIkT_mABDsCje07xO6mvA3UsTiWcOb5QnnAAs="
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <label>Height:</label>
-        <input type="text" v-model="editUserParams.height" />
-      </div>
-      <div>
-        <label>Weight:</label>
-        <input type="text" v-model="editUserParams.weight" />
-      </div>
-      <input type="submit" value="Submit" />
     </form>
   </div>
 </template>
