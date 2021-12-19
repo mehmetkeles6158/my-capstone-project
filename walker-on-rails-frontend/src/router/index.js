@@ -42,12 +42,12 @@ const routes = [
   { path: "/logout", 
     name: "logout", 
     component: Logout },
-  { path: "/users/show", 
-    name: "user-show", 
-    component: UserShow },
-  { path: "/users", 
+  { path: "/users/optimal", 
     name: "useredit", 
     component: UserEdit },
+  { path: "/users/optimal/show", 
+    name: "user-show", 
+    component: UserShow },
   
 
   {

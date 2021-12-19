@@ -48,7 +48,7 @@ export default {
     submit: function () {
       axios.patch("/users", this.editUserParams).then((response) => {
         console.log(response.data);
-        this.$router.push("/users/show");
+        this.$router.push("/users/optimal/show");
       });
     },
     getUser: function () {
