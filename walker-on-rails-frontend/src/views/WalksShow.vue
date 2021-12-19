@@ -1,30 +1,46 @@
 <template>
   <div class="show">
-    <h1>{{ message }}</h1>
-    <p>
-      <b>User Id:</b>
-      {{ walk.user_id }}
-    </p>
-    <p>
-      <b>Name:</b>
-      {{ walk.user.name }}
-    </p>
-    <p>
-      <b>Optimal Steps:</b>
-      {{ walk.user.optimal_steps }}
-    </p>
-    <p>
-      <b>Your Steps:</b>
-      {{ walk.steps }}
-    </p>
-    <p>
-      <b>Distance in miles:</b>
-      {{ walk.miles }}
-    </p>
-    <p>
-      <b>Calories-Burned:</b>
-      {{ walk.cal }}
-    </p>
+    <br />
+    <br />
+    <ul class="list-group">
+      <li class="list-group-item active" aria-current="true"><h5>Walk Details</h5></li>
+      <li class="list-group-item">
+        <p>
+          <b>User Id:</b>
+          {{ walk.user.id }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <b>Name:</b>
+          {{ walk.user.name }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <b>Optimal Steps:</b>
+          {{ walk.user.optimal_steps }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <b>Your Steps:</b>
+          {{ walk.steps }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <b>Distance in miles:</b>
+          {{ walk.miles }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <b>Calories-Burned:</b>
+          {{ walk.cal }}
+        </p>
+      </li>
+    </ul>
   </div>
 </template>
 
