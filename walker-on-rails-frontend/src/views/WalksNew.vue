@@ -16,7 +16,7 @@
             <label>Date:</label>
             <input type="date" v-model="newWalkParams.date" />
           </div>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Add Walk" class="btn btn-primary" />
         </div>
         <div class="card-footer text-muted">
           <p>"Keep Moving Forward :)"</p>
