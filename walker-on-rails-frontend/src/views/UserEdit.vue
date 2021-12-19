@@ -18,10 +18,9 @@
             <label>Weight:</label>
             <input type="text" v-model="editUserParams.weight" />
           </div>
-          <input type="submit" value="Get New Optimal" />
+          <input type="submit" value="New-Optimal" class="btn btn-primary" />
         </div>
         <div class="card-footer text-muted">
-          <p>"Keep Moving Forward :)"</p>
           <img
             src="https://media.istockphoto.com/photos/closeup-on-shoe-of-athlete-runner-man-feet-running-picture-id494437762?b=1&k=20&m=494437762&s=170667a&w=0&h=6ENwkyaIkT_mABDsCje07xO6mvA3UsTiWcOb5QnnAAs="
             alt=""

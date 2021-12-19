@@ -1,6 +1,4 @@
 class WalksController < ApplicationController
-  # response = HTTP.get("https://developer.nps.gov/api/v1/parks?parkCode=CHOH&api_key=lreBv66OgcJgBfSE9Q8xnmFKKx05cE7qfNoDCfsf")
-  # park_response = response.parse(:json)
   before_action :authenticate_user
   def index
     walks = Walk.where(user_id: current_user.id)

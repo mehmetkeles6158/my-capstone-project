@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "/users" => "users#index"
   patch "/users" => "users#update"
   post "/sessions" => "sessions#create"
-  
-  
+
+
 
 end
