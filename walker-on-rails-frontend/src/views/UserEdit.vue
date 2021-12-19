@@ -4,7 +4,8 @@
       <div class="card text-center">
         <div class="card-header">The Walker on The Rails</div>
         <div class="card-body">
-          <h5 class="card-title">Edit Your Info</h5>
+          <h5 class="card-title">Update Your Info!</h5>
+          <p>(Note: Enter your height in inches.)</p>
           <div>
             <label>Age:</label>
             <input type="text" v-model="editUserParams.age" />
@@ -17,7 +18,7 @@
             <label>Weight:</label>
             <input type="text" v-model="editUserParams.weight" />
           </div>
-          <input type="submit" value="Edit" />
+          <input type="submit" value="Get New Optimal" />
         </div>
         <div class="card-footer text-muted">
           <p>"Keep Moving Forward :)"</p>
@@ -47,7 +48,7 @@ export default {
     submit: function () {
       axios.patch("/users", this.editUserParams).then((response) => {
         console.log(response.data);
-        this.$router.push("/walks");
+        this.$router.push("/users/show");
       });
     },
     getUser: function () {
