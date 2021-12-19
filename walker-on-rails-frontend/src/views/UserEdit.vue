@@ -17,7 +17,7 @@
             <label>Weight:</label>
             <input type="text" v-model="editUserParams.weight" />
           </div>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Edit" />
         </div>
         <div class="card-footer text-muted">
           <p>"Keep Moving Forward :)"</p>
@@ -40,12 +40,20 @@ export default {
       editUserParams: {},
     };
   },
-  created: function () {},
+  created: function () {
+    this.getUser();
+  },
   methods: {
     submit: function () {
       axios.patch("/users", this.editUserParams).then((response) => {
         console.log(response.data);
         this.$router.push("/walks");
+      });
+    },
+    getUser: function () {
+      axios.get("/users").then((response) => {
+        console.log(response.data);
+        this.editUserParams = response.data;
       });
     },
   },
