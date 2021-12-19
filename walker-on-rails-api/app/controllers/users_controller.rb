@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.where(id: current_user.id)
+    user = User.find_by(id: current_user.id)
     user.age = params[:age] || user.age
     user.weight = params[:weight] || user.weight
     user.height = params[:height] || user.height

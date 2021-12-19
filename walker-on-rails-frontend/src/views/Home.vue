@@ -35,7 +35,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://images.unsplash.com/photo-1572015653901-313e493edc82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2Fsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              src="https://media.istockphoto.com/photos/young-man-walking-picture-id820848470?b=1&k=20&m=820848470&s=170667a&w=0&h=cIi9fmecBpDkuMKNQlZ6CGCJeDvYig__Rg_GZqTuMCk="
               class="d-block w-100"
               alt=""
             />
@@ -63,7 +63,7 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>The Walker on The Rails</h5>
-              <p>The coolest way to track your steps!</p>
+              <p>The coolest to way to track your steps</p>
             </div>
           </div>
         </div>
