@@ -1,20 +1,90 @@
 <template>
   <div class="home">
-    <div class="container-fluid">
-      <div class="card text-white bg-secondary my-3 py-2 text-center">
-        <div class="card-body">
-          <h2 class="text-white m-0">"Welcome to The Walker On The Rails"</h2>
-          {{ users.name }}
-        </div>
+    <div class="container">
+      <br />
+      <div class="text-center">
+        <h3>
+          Welcome "
+          <b>{{ users.name }}</b>
+          "
+        </h3>
       </div>
-      <div class="row gx-4 gx-lg-5 align-items-center my-3">
-        <div class="col-lg-7">
-          <img
-            class="img-fluid rounded mb-4 mb-lg-0"
-            src="https://images.unsplash.com/photo-1449459831403-2ea2681d4270?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&w=1000&q=80"
-            alt="..."
-          />
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1572015653901-313e493edc82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2Fsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Walker on The Rails</h5>
+              <p>The first web app which gives you optimal numbers of steps you should walk daily.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1496185106368-308ed96f204b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2Fsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Walker on The Rails</h5>
+              <p>The web app is only about walking.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1538471726790-0f6b031f1982?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Fsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Walker on The Rails</h5>
+              <p>The coolest way to track your steps!</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
