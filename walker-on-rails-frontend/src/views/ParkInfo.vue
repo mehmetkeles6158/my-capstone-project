@@ -13,7 +13,11 @@
     </p>
     <p>
       <b>Park Address:</b>
-      {{ parks.addresses[0]["line1"] }} {{ parks.addresses[0]["city"] }}/{{ parks.addresses[0]["stateCode"] }}
+      <!-- {{ parks.addresses[0]["line1"] }} {{ parks.addresses[0]["city"] }}/{{ parks.addresses[0]["stateCode"] }} -->
+    </p>
+    <p>
+      <b>Directions:</b>
+      {{ parks.directionsInfo }}
     </p>
     <p>
       <b>Weather Info:</b>

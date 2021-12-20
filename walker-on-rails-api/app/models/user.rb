@@ -7,12 +7,14 @@ class User < ApplicationRecord
   def optimal_steps
     formula = height.to_f / weight.to_f
 
-    if formula >=  0.39
+    if formula >=  0.49
       5200
-    elsif formula > 0.29 && formula < 0.39
-      6500
+    elsif formula >= 0.39 && formula < 0.49
+      6300
+    elsif formula >= 0.29 && formula < 0.39
+      7600
     else
-      10000
+      9500
     end
   end
 
