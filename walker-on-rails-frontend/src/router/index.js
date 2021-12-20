@@ -9,6 +9,7 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import UserShow from "../views/UserShow.vue";
 import UserEdit from "../views/UserEdit.vue";
+import ParkInfo from "../views/ParkInfo.vue";
 
 Vue.use(VueRouter)
 
@@ -33,22 +34,32 @@ const routes = [
     name: 'walks-show',
     component: WalksShow
   },
-  { path: "/signup", 
+  { 
+    path: "/signup", 
     name: "signup", 
     component: Signup },
-  { path: "/login", 
+  { 
+    path: "/login", 
     name: "login", 
     component: Login },
-  { path: "/logout", 
+  { 
+    path: "/logout", 
     name: "logout", 
     component: Logout },
-  { path: "/users/optimal", 
+  { 
+    path: "/users/optimal", 
     name: "useredit", 
     component: UserEdit },
-  { path: "/users/optimal/show", 
+  { 
+    path: "/users/optimal/show", 
     name: "user-show", 
     component: UserShow },
+  { 
+    path: "/parks", 
+    name: "park-info", 
+    component: ParkInfo },
   
+
 
   {
     path: '/about',
