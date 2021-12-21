@@ -1,8 +1,10 @@
 <template>
-  <div class="signup">
+  <div class="parkinfo">
     <section
       class="h-100 bg-image"
-      style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.jpg')"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1622057667220-7e0c8976ca6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+      "
     >
       <div class="mask d-flex align-items-center h-100 gradient-custom-3">
         <div class="container h-100">
