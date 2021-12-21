@@ -1,30 +1,21 @@
 <template>
   <div class="home">
-    <h5>Please enter park code to get deatils!</h5>
+    <h5>Please enter your address to get 3 closest national park with their info!</h5>
     <div>
-      <input type="text" v-model="parkCode" />
+      <input type="text" v-model="address" />
       <button v-on:click="parksIndex()">Get Info</button>
     </div>
     <br />
-    <p>
-      <b>Name:</b>
-      {{ parks.fullName }}
-    </p>
-    <p>
-      <b>Park-Description:</b>
-      {{ parks.description }}
-    </p>
-    <p>
-      <b>Park Address:</b>
-      <!-- {{ parks.addresses[0]["line1"] }} {{ parks.addresses[0]["city"] }}/{{ parks.addresses[0]["stateCode"] }} -->
-    </p>
-    <p>
-      <b>Directions:</b>
-      {{ parks.directionsInfo }}
-    </p>
-    <p>
-      <b>Weather Info:</b>
-      {{ parks.weatherInfo }}
+
+    <div v-for="park in parks">
+      <p><b>Distance: </b>{{ park.distance}}</p>
+      <p><b>Name: </b>{{ park.park_name}}</p>
+      <p><b>Address: </b>{{ park.park_address}}</p>
+      <p><b>Directions: </b>{{ park.directions_info}}</p>
+      <p><b>Weather Info: </b>{{ park.weather_info}}</p>
+      <hr>
+    </div>
+   
     </p>
   </div>
 </template>
@@ -37,7 +28,7 @@ export default {
   data: function () {
     return {
       message: "Welcome to Vue.js!",
-      parkCode: "",
+      address: "",
       parks: [],
     };
   },
@@ -46,7 +37,7 @@ export default {
   },
   methods: {
     parksIndex: function () {
-      axios.get(`/parks?parkCode=${this.parkCode}`).then((response) => {
+      axios.get(`/parks?address=${this.address}`).then((response) => {
         console.log(response.data);
         this.parks = response.data;
       });
