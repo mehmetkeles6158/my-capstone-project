@@ -1,11 +1,23 @@
 <template>
   <div class="home">
-    <h5>Please enter your address to get 3 closest national park with their info!</h5>
-    <div>
-      <input type="text" v-model="address" />
-      <button v-on:click="parksIndex()">Get Info</button>
-    </div>
     <br />
+    <h5 class="text-center">
+      Please enter your
+      <i>address</i>
+      to get 3 closest national parks with their info!
+    </h5>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        v-model="address"
+        class="form-control"
+        placeholder="Recipient's username"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <button v-on:click="parksIndex()" class="btn btn-primary" type="button" id="button-addon2">Explore</button>
+    </div>
+
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5">
         <div class="col-md-4 mb-5" v-for="park in parks">
