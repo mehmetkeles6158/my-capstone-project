@@ -23,10 +23,10 @@
               <a class="nav-link active" aria-current="page" href="/walks">All Walks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users/optimal">Optimal</a>
+              <a class="nav-link" href="/users/optimal">Optimal Steps</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/parks?parkCode=abli">Park Info</a>
+              <a class="nav-link" href="/parks?parkCode=abli">Parks Info</a>
             </li>
             <li class="nav-item dropdown">
               <a

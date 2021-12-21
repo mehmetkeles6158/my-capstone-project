@@ -63,7 +63,7 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>The Walker on The Rails</h5>
-              <p>The coolest to way to track your steps.</p>
+              <p>The coolest to way to track your steps, and calories you burned based on your optimal steps.</p>
             </div>
           </div>
         </div>
