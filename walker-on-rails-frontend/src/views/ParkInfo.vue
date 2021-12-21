@@ -6,29 +6,35 @@
       <button v-on:click="parksIndex()">Get Info</button>
     </div>
     <br />
-
-    <div v-for="park in parks">
-      <p>
-        <b>Distance:</b>
-        {{ park.distance }}
-      </p>
-      <p>
-        <b>Name:</b>
-        {{ park.park_name }}
-      </p>
-      <p>
-        <b>Address:</b>
-        {{ park.address }}
-      </p>
-      <p>
-        <b>Directions:</b>
-        {{ park.directions_info }}
-      </p>
-      <p>
-        <b>Weather Info:</b>
-        {{ park.weather_info }}
-      </p>
-      <hr />
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5" v-for="park in parks">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Park-Info:</h4>
+              <p class="card-text">
+                <b>Distance:</b>
+                {{ park.distance }}
+                <br />
+                <b>Distance:</b>
+                {{ park.distance }}
+                <br />
+                <b>Name:</b>
+                {{ park.park_name }}
+                <br />
+                <b>Address:</b>
+                {{ park.address }}
+                <br />
+                <b>Direction Info:</b>
+                {{ park.directions_info }}
+                <br />
+                <b>Weather Info:</b>
+                {{ park.weather_info }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
