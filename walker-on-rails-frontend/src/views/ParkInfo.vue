@@ -8,15 +8,28 @@
     <br />
 
     <div v-for="park in parks">
-      <p><b>Distance: </b>{{ park.distance}}</p>
-      <p><b>Name: </b>{{ park.park_name}}</p>
-      <p><b>Address: </b>{{ park.park_address}}</p>
-      <p><b>Directions: </b>{{ park.directions_info}}</p>
-      <p><b>Weather Info: </b>{{ park.weather_info}}</p>
-      <hr>
+      <p>
+        <b>Distance:</b>
+        {{ park.distance }}
+      </p>
+      <p>
+        <b>Name:</b>
+        {{ park.park_name }}
+      </p>
+      <p>
+        <b>Address:</b>
+        {{ park.address }}
+      </p>
+      <p>
+        <b>Directions:</b>
+        {{ park.directions_info }}
+      </p>
+      <p>
+        <b>Weather Info:</b>
+        {{ park.weather_info }}
+      </p>
+      <hr />
     </div>
-   
-    </p>
   </div>
 </template>
 
