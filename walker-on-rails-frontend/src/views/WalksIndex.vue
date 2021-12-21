@@ -65,7 +65,6 @@ export default {
       });
     },
     usersIndex: function () {
-      console.log("Loading Users");
       axios.get("/users").then((response) => {
         console.log(response.data);
         this.users = response.data;

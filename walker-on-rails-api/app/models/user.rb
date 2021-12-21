@@ -14,7 +14,7 @@ class User < ApplicationRecord
     elsif formula >= 0.29 && formula < 0.39
       7600
     else
-      9500
+      8800
     end
   end
 

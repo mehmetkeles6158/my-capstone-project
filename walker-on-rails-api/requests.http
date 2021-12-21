@@ -47,7 +47,7 @@ PATCH http://localhost:3000/users
 Authorization: Bearer {{jwt}}
 
 ###
-GET http://localhost:3000/parks?parkCode=acad
+GET http://localhost:3000/parks?parkCode=
 
 
 

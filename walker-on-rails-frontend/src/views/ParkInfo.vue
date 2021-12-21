@@ -1,8 +1,11 @@
 <template>
   <div class="home">
     <h5>Please enter park code to get deatils!</h5>
-    <input type="text" v-model="parkCode" />
-    <button v-on:click="parksIndex()">Get Info</button>
+    <div>
+      <input type="text" v-model="parkCode" />
+      <button v-on:click="parksIndex()">Get Info</button>
+    </div>
+    <br />
     <p>
       <b>Name:</b>
       {{ parks.fullName }}
@@ -43,7 +46,6 @@ export default {
   },
   methods: {
     parksIndex: function () {
-      console.log("Loading parks");
       axios.get(`/parks?parkCode=${this.parkCode}`).then((response) => {
         console.log(response.data);
         this.parks = response.data;

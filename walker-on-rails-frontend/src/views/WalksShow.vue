@@ -60,7 +60,6 @@ export default {
   },
   methods: {
     getWalk: function () {
-      console.log("get walk");
       axios.get(`/walks/${this.$route.params.id}`).then((response) => {
         console.log(response.data);
         this.walk = response.data;

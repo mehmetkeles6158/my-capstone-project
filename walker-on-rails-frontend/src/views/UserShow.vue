@@ -49,7 +49,6 @@ export default {
   },
   methods: {
     getUser: function () {
-      console.log("get user");
       axios.get("/users").then((response) => {
         console.log(response.data);
         this.user = response.data;
