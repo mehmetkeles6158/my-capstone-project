@@ -12,7 +12,7 @@
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
               <div class="card" style="border-radius: 15px">
                 <div class="card-body p-3">
-                  <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                  <h2 class="text-uppercase text-center mb-3">Create an account</h2>
                   <ul>
                     <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
                   </ul>
@@ -24,6 +24,36 @@
                         id="form3Example1cg"
                         class="form-control form-control-lg"
                         placeholder="Name"
+                      />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input
+                        type="text"
+                        v-model="newUserParams.age"
+                        id="form3Example1cg"
+                        class="form-control form-control-lg"
+                        placeholder="Age"
+                      />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input
+                        type="text"
+                        v-model="newUserParams.height"
+                        id="form3Example1cg"
+                        class="form-control form-control-lg"
+                        placeholder="Height"
+                      />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input
+                        type="text"
+                        v-model="newUserParams.weight"
+                        id="form3Example1cg"
+                        class="form-control form-control-lg"
+                        placeholder="Weight"
                       />
                     </div>
 

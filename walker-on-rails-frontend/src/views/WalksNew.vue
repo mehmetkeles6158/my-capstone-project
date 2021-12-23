@@ -8,15 +8,16 @@
         <div class="card-header">The Walker on The Rails</div>
         <div class="card-body">
           <h5 class="card-title">Add Your Walk</h5>
+          <br />
           <div>
-            <label>Steps:</label>
-            <input type="text" v-model="newWalkParams.steps" />
+            <input type="text" placeholder="Your Steps" v-model="newWalkParams.steps" />
           </div>
+          <br />
           <div>
-            <label>Date:</label>
-            <input type="date" v-model="newWalkParams.date" />
+            <input type="date" placeholder="Date" v-model="newWalkParams.date" />
           </div>
-          <input type="submit" value="Add Walk" class="btn btn-primary" />
+          <br />
+          <input type="submit" value="Add Walk" class="btn-success" />
         </div>
         <div class="card-footer text-muted">
           <p>"Keep Moving Forward :)"</p>

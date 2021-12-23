@@ -31,13 +31,13 @@
       <li class="list-group-item">
         <p>
           <b>Distance in miles:</b>
-          {{ walk.miles }}
+          {{ walk.miles }} miles.
         </p>
       </li>
       <li class="list-group-item">
         <p>
           <b>Calories-Burned:</b>
-          {{ walk.cal }}
+          {{ walk.cal }} calories.
         </p>
       </li>
     </ul>

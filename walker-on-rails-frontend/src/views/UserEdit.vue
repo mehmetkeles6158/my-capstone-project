@@ -4,8 +4,16 @@
       <div class="card text-center">
         <div class="card-header">The Walker on The Rails</div>
         <div class="card-body">
-          <h5 class="card-title">Update Your Info!</h5>
-          <p>(Note: Enter your height in inches.)</p>
+          <h5 class="card-title">Update your info to get your new optimal!</h5>
+          <p>
+            (
+            <b>Note:</b>
+            Enter your height in inches and weight in pounds.)
+          </p>
+          <p>
+            <b>Old-Optimal-Steps:</b>
+            {{ editUserParams.optimal_steps }}
+          </p>
           <div>
             <label>Age:</label>
             <input type="text" v-model="editUserParams.age" />
@@ -18,7 +26,7 @@
             <label>Weight:</label>
             <input type="text" v-model="editUserParams.weight" />
           </div>
-          <input type="submit" value="New-Optimal" class="btn btn-primary" />
+          <input type="submit" value="Get-New-Optimal" class="btn btn-success" />
         </div>
         <div class="card-footer text-muted">
           <img

@@ -4,9 +4,8 @@
       <br />
       <div class="text-center">
         <h3>
-          Welcome "
+          Welcome,
           <b>{{ users.name }}</b>
-          "
         </h3>
       </div>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">

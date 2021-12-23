@@ -31,12 +31,47 @@
               </p>
             </div>
             <div class="card-footer">
-              <a class="btn btn-primary btn-sm" v-bind:href="`/walks/${walk.id}`">More Info</a>
+              <!-- <a class="btn btn-primary btn-sm" v-bind:href="`/walks/${walk.id}`">More Info</a> -->
+              <button class="btn btn-info btn-sm" v-on:click="showWalk(walk)">More Info</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <dialog id="show-walk">
+      <form method="dialog">
+        <img src="https://images.unsplash.com/photo-1485809052957-5113b0ff51af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhpa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid img-thumbnail my-1"
+        height="100px"
+        width="300px" alt="">
+        <h3>Your Walk' Details Here,  </h3>
+        <br />
+        <p>
+          <b>User Id:</b>
+          {{ users.id }}
+        </p>
+        <p>
+          <b>User Name:</b>
+          {{ users.name }}
+        </p>
+        <p>
+          <h5>Optimal Steps: "{{ users.optimal_steps }}"</h5>
+          
+        </p>
+        <p>
+          <b>Your Steps:</b>
+          {{ currentWalk.steps }}
+        </p>
+        <p>
+          <b>Miles:</b>
+          {{ currentWalk.miles }} miles.
+        </p>
+        <p>
+          <b>Calories-Burned:</b>
+          {{ currentWalk.cal }} calories.
+        </p>
+        <button class="btn btn-warning btn-sm">Close</button>
+      </form>
+    </dialog>
   </div>
 </template>
 
@@ -50,6 +85,7 @@ export default {
       message: "Daily Walks",
       walks: [],
       users: [],
+      currentWalk: {},
     };
   },
   created: function () {
@@ -69,6 +105,11 @@ export default {
         console.log(response.data);
         this.users = response.data;
       });
+    },
+    showWalk: function (theWalk) {
+      console.log(theWalk);
+      this.currentWalk = theWalk;
+      document.querySelector("#show-walk").showModal();
     },
   },
 };
